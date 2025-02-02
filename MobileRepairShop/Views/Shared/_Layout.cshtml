@@ -1,0 +1,173 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - MOBI POINT</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #667eea;
+            --primary-dark: #764ba2;
+            --secondary: #64748b;
+            --success: #22c55e;
+            --danger: #ef4444;
+            --background: #f8fafc;
+            --card: #ffffff;
+            --text: #1f2937;
+            --text-light: #6B7280;
+            --shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+            --border-radius: 20px;
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: var(--background);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        .navbar {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: var(--shadow);
+        }
+
+        .nav-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+            letter-spacing: 1px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 0.25rem;
+            transition: var(--transition);
+        }
+
+            .nav-link:hover {
+                background: rgba(255, 255, 255, 0.2);
+                transform: translateY(-2px);
+            }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .history-btn {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: var(--transition);
+            box-shadow: var(--shadow);
+        }
+
+            .history-btn:hover {
+                opacity: 0.9;
+                transform: translateY(-2px);
+            }
+
+        .navbar-nav {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .nav-item {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 0.25rem;
+            transition: var(--transition);
+        }
+
+            .nav-item:hover {
+                background: rgba(255, 255, 255, 0.2);
+                transform: translateY(-2px);
+            }
+    </style>
+    @RenderSection("Styles", required: false)
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="/" class="logo">MOBI POINT</a>
+            <div class="nav-links">
+                <a href="/" class="nav-link"><i class="fas fa-home"></i> Home</a>
+                <a href="/Products/About" class="nav-link"><i class="fas fa-info-circle"></i> About</a>
+                <a href="/Products/Services" class="nav-link"><i class="fas fa-tools"></i> Services</a>
+                <a href="/Products" class="nav-link"><i class="fas fa-mobile-alt"></i> Products</a>
+                <a href="/Products/History" class="nav-link"><i class="fas fa-history"></i> History</a>
+                <a href="/Products/Privacy" class="nav-link"><i class="fas fa-shield-alt"></i> Privacy</a>
+                <a href="/Products/Contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a>
+            </div>
+
+            <!-- Start of the embedded login/logout section -->
+            <div class="navbar-nav">
+                @if (Context.Session.GetString("UserEmail") != null)
+                {
+                    <span class="nav-item">
+                        Welcome, @Context.Session.GetString("UserEmail")
+                        (@(Context.Session.GetString("UserRole") == "Admin" ? "Admin" : "User"))
+                    </span>
+                    <a class="nav-item" href="@Url.Action("Logout", "Account")">Logout</a>
+                }
+                else
+                {
+                    <a class="nav-item" href="@Url.Action("Login", "Account")">Login</a>
+                    <a class="nav-item" href="@Url.Action("Register", "Account")">Register</a>
+                }
+            </div>
+            <!-- End of the embedded login/logout section -->
+        </div>
+    </nav>
+
+    <div class="container">
+        @RenderBody()
+    </div>
+
+    <div class="history-btn" onclick="window.location.href='/Products/History'" title="View History">
+        <i class="fas fa-history"></i>
+    </div>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,380 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\nagam\\source\\repos\\MobileRepairShop\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D97CB4E9-6BD5-4F6E-A5B6-E1609DA37B63}|MobileRepairShop\\MobileRepairShop.csproj|c:\\users\\nagam\\source\\repos\\mobilerepairshop\\mobilerepairshop\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D97CB4E9-6BD5-4F6E-A5B6-E1609DA37B63}|MobileRepairShop\\MobileRepairShop.csproj|solutionrelative:mobilerepairshop\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D97CB4E9-6BD5-4F6E-A5B6-E1609DA37B63}|MobileRepairShop\\MobileRepairShop.csproj|c:\\users\\nagam\\source\\repos\\mobilerepairshop\\mobilerepairshop\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D97CB4E9-6BD5-4F6E-A5B6-E1609DA37B63}|MobileRepairShop\\MobileRepairShop.csproj|solutionrelative:mobilerepairshop\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D97CB4E9-6BD5-4F6E-A5B6-E1609DA37B63}|MobileRepairShop\\MobileRepairShop.csproj|c:\\users\\nagam\\source\\repos\\mobilerepairshop\\mobilerepairshop\\views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D97CB4E9-6BD5-4F6E-A5B6-E1609DA37B63}|MobileRepairShop\\MobileRepairShop.csproj|solutionrelative:mobilerepairshop\\views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D97CB4E9-6BD5-4F6E-A5B6-E1609DA37B63}|MobileRepairShop\\MobileRepairShop.csproj|c:\\users\\nagam\\source\\repos\\mobilerepairshop\\mobilerepairshop\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D97CB4E9-6BD5-4F6E-A5B6-E1609DA37B63}|MobileRepairShop\\MobileRepairShop.csproj|solutionrelative:mobilerepairshop\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D97CB4E9-6BD5-4F6E-A5B6-E1609DA37B63}|MobileRepairShop\\MobileRepairShop.csproj|c:\\users\\nagam\\source\\repos\\mobilerepairshop\\mobilerepairshop\\dbcontext\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D97CB4E9-6BD5-4F6E-A5B6-E1609DA37B63}|MobileRepairShop\\MobileRepairShop.csproj|solutionrelative:mobilerepairshop\\dbcontext\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D97CB4E9-6BD5-4F6E-A5B6-E1609DA37B63}|MobileRepairShop\\MobileRepairShop.csproj|c:\\users\\nagam\\source\\repos\\mobilerepairshop\\mobilerepairshop\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D97CB4E9-6BD5-4F6E-A5B6-E1609DA37B63}|MobileRepairShop\\MobileRepairShop.csproj|solutionrelative:mobilerepairshop\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D97CB4E9-6BD5-4F6E-A5B6-E1609DA37B63}|MobileRepairShop\\MobileRepairShop.csproj|c:\\users\\nagam\\source\\repos\\mobilerepairshop\\mobilerepairshop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D97CB4E9-6BD5-4F6E-A5B6-E1609DA37B63}|MobileRepairShop\\MobileRepairShop.csproj|solutionrelative:mobilerepairshop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D97CB4E9-6BD5-4F6E-A5B6-E1609DA37B63}|MobileRepairShop\\MobileRepairShop.csproj|c:\\users\\nagam\\source\\repos\\mobilerepairshop\\mobilerepairshop\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D97CB4E9-6BD5-4F6E-A5B6-E1609DA37B63}|MobileRepairShop\\MobileRepairShop.csproj|solutionrelative:mobilerepairshop\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D97CB4E9-6BD5-4F6E-A5B6-E1609DA37B63}|MobileRepairShop\\MobileRepairShop.csproj|c:\\users\\nagam\\source\\repos\\mobilerepairshop\\mobilerepairshop\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D97CB4E9-6BD5-4F6E-A5B6-E1609DA37B63}|MobileRepairShop\\MobileRepairShop.csproj|solutionrelative:mobilerepairshop\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D97CB4E9-6BD5-4F6E-A5B6-E1609DA37B63}|MobileRepairShop\\MobileRepairShop.csproj|c:\\users\\nagam\\source\\repos\\mobilerepairshop\\mobilerepairshop\\models\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D97CB4E9-6BD5-4F6E-A5B6-E1609DA37B63}|MobileRepairShop\\MobileRepairShop.csproj|solutionrelative:mobilerepairshop\\models\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D97CB4E9-6BD5-4F6E-A5B6-E1609DA37B63}|MobileRepairShop\\MobileRepairShop.csproj|c:\\users\\nagam\\source\\repos\\mobilerepairshop\\mobilerepairshop\\models\\history.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D97CB4E9-6BD5-4F6E-A5B6-E1609DA37B63}|MobileRepairShop\\MobileRepairShop.csproj|solutionrelative:mobilerepairshop\\models\\history.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D97CB4E9-6BD5-4F6E-A5B6-E1609DA37B63}|MobileRepairShop\\MobileRepairShop.csproj|c:\\users\\nagam\\source\\repos\\mobilerepairshop\\mobilerepairshop\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D97CB4E9-6BD5-4F6E-A5B6-E1609DA37B63}|MobileRepairShop\\MobileRepairShop.csproj|solutionrelative:mobilerepairshop\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D97CB4E9-6BD5-4F6E-A5B6-E1609DA37B63}|MobileRepairShop\\MobileRepairShop.csproj|c:\\users\\nagam\\source\\repos\\mobilerepairshop\\mobilerepairshop\\views\\products\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D97CB4E9-6BD5-4F6E-A5B6-E1609DA37B63}|MobileRepairShop\\MobileRepairShop.csproj|solutionrelative:mobilerepairshop\\views\\products\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D97CB4E9-6BD5-4F6E-A5B6-E1609DA37B63}|MobileRepairShop\\MobileRepairShop.csproj|c:\\users\\nagam\\source\\repos\\mobilerepairshop\\mobilerepairshop\\views\\products\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D97CB4E9-6BD5-4F6E-A5B6-E1609DA37B63}|MobileRepairShop\\MobileRepairShop.csproj|solutionrelative:mobilerepairshop\\views\\products\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D97CB4E9-6BD5-4F6E-A5B6-E1609DA37B63}|MobileRepairShop\\MobileRepairShop.csproj|c:\\users\\nagam\\source\\repos\\mobilerepairshop\\mobilerepairshop\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D97CB4E9-6BD5-4F6E-A5B6-E1609DA37B63}|MobileRepairShop\\MobileRepairShop.csproj|solutionrelative:mobilerepairshop\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D97CB4E9-6BD5-4F6E-A5B6-E1609DA37B63}|MobileRepairShop\\MobileRepairShop.csproj|c:\\users\\nagam\\source\\repos\\mobilerepairshop\\mobilerepairshop\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D97CB4E9-6BD5-4F6E-A5B6-E1609DA37B63}|MobileRepairShop\\MobileRepairShop.csproj|solutionrelative:mobilerepairshop\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D97CB4E9-6BD5-4F6E-A5B6-E1609DA37B63}|MobileRepairShop\\MobileRepairShop.csproj|c:\\users\\nagam\\source\\repos\\mobilerepairshop\\mobilerepairshop\\views\\products\\history.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D97CB4E9-6BD5-4F6E-A5B6-E1609DA37B63}|MobileRepairShop\\MobileRepairShop.csproj|solutionrelative:mobilerepairshop\\views\\products\\history.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D97CB4E9-6BD5-4F6E-A5B6-E1609DA37B63}|MobileRepairShop\\MobileRepairShop.csproj|c:\\users\\nagam\\source\\repos\\mobilerepairshop\\mobilerepairshop\\views\\products\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D97CB4E9-6BD5-4F6E-A5B6-E1609DA37B63}|MobileRepairShop\\MobileRepairShop.csproj|solutionrelative:mobilerepairshop\\views\\products\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D97CB4E9-6BD5-4F6E-A5B6-E1609DA37B63}|MobileRepairShop\\MobileRepairShop.csproj|c:\\users\\nagam\\source\\repos\\mobilerepairshop\\mobilerepairshop\\views\\products\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D97CB4E9-6BD5-4F6E-A5B6-E1609DA37B63}|MobileRepairShop\\MobileRepairShop.csproj|solutionrelative:mobilerepairshop\\views\\products\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D97CB4E9-6BD5-4F6E-A5B6-E1609DA37B63}|MobileRepairShop\\MobileRepairShop.csproj|c:\\users\\nagam\\source\\repos\\mobilerepairshop\\mobilerepairshop\\views\\products\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D97CB4E9-6BD5-4F6E-A5B6-E1609DA37B63}|MobileRepairShop\\MobileRepairShop.csproj|solutionrelative:mobilerepairshop\\views\\products\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D97CB4E9-6BD5-4F6E-A5B6-E1609DA37B63}|MobileRepairShop\\MobileRepairShop.csproj|c:\\users\\nagam\\source\\repos\\mobilerepairshop\\mobilerepairshop\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D97CB4E9-6BD5-4F6E-A5B6-E1609DA37B63}|MobileRepairShop\\MobileRepairShop.csproj|solutionrelative:mobilerepairshop\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D97CB4E9-6BD5-4F6E-A5B6-E1609DA37B63}|MobileRepairShop\\MobileRepairShop.csproj|c:\\users\\nagam\\source\\repos\\mobilerepairshop\\mobilerepairshop\\migrations\\20250201160314_useraccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D97CB4E9-6BD5-4F6E-A5B6-E1609DA37B63}|MobileRepairShop\\MobileRepairShop.csproj|solutionrelative:mobilerepairshop\\migrations\\20250201160314_useraccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\nagam\\source\\repos\\MobileRepairShop\\MobileRepairShop\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "MobileRepairShop\\Views\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\nagam\\source\\repos\\MobileRepairShop\\MobileRepairShop\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "MobileRepairShop\\Views\\Account\\Register.cshtml",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAACcAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-01T15:43:55.809Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\nagam\\source\\repos\\MobileRepairShop\\MobileRepairShop\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "MobileRepairShop\\Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\nagam\\source\\repos\\MobileRepairShop\\MobileRepairShop\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "MobileRepairShop\\Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAALgAAAAAAAAAAAAqwNAAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-01T15:43:16.901Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\nagam\\source\\repos\\MobileRepairShop\\MobileRepairShop\\Models\\User.cs",
+              "RelativeDocumentMoniker": "MobileRepairShop\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\nagam\\source\\repos\\MobileRepairShop\\MobileRepairShop\\Models\\User.cs",
+              "RelativeToolTip": "MobileRepairShop\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-01T15:40:33.435Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "C:\\Users\\nagam\\source\\repos\\MobileRepairShop\\MobileRepairShop\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "MobileRepairShop\\Controllers\\ProductsController.cs",
+              "ToolTip": "C:\\Users\\nagam\\source\\repos\\MobileRepairShop\\MobileRepairShop\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "MobileRepairShop\\Controllers\\ProductsController.cs",
+              "ViewState": "AgIAALkAAAAAAAAAAAAgwMgAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-01T12:01:33.744Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\nagam\\source\\repos\\MobileRepairShop\\MobileRepairShop\\DBContext\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "MobileRepairShop\\DBContext\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\nagam\\source\\repos\\MobileRepairShop\\MobileRepairShop\\DBContext\\ApplicationDbContext.cs",
+              "RelativeToolTip": "MobileRepairShop\\DBContext\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAxwBoAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-01T11:54:01.189Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\nagam\\source\\repos\\MobileRepairShop\\MobileRepairShop\\Program.cs",
+              "RelativeDocumentMoniker": "MobileRepairShop\\Program.cs",
+              "ToolTip": "C:\\Users\\nagam\\source\\repos\\MobileRepairShop\\MobileRepairShop\\Program.cs",
+              "RelativeToolTip": "MobileRepairShop\\Program.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAqwCcAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-01T11:54:34.272Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\nagam\\source\\repos\\MobileRepairShop\\MobileRepairShop\\Views\\Products\\Index.cshtml",
+              "RelativeDocumentMoniker": "MobileRepairShop\\Views\\Products\\Index.cshtml",
+              "ToolTip": "C:\\Users\\nagam\\source\\repos\\MobileRepairShop\\MobileRepairShop\\Views\\Products\\Index.cshtml",
+              "RelativeToolTip": "MobileRepairShop\\Views\\Products\\Index.cshtml",
+              "ViewState": "AgIAACQCAAAAAAAAAAAqwDwCAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-01T12:02:09.108Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\nagam\\source\\repos\\MobileRepairShop\\MobileRepairShop\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "MobileRepairShop\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\nagam\\source\\repos\\MobileRepairShop\\MobileRepairShop\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "MobileRepairShop\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAJQAAAAAAAAAAAAqwKwAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-01T13:14:45.672Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Contact.cs",
+              "DocumentMoniker": "C:\\Users\\nagam\\source\\repos\\MobileRepairShop\\MobileRepairShop\\Models\\Contact.cs",
+              "RelativeDocumentMoniker": "MobileRepairShop\\Models\\Contact.cs",
+              "ToolTip": "C:\\Users\\nagam\\source\\repos\\MobileRepairShop\\MobileRepairShop\\Models\\Contact.cs",
+              "RelativeToolTip": "MobileRepairShop\\Models\\Contact.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-01T11:53:14.309Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\nagam\\source\\repos\\MobileRepairShop\\MobileRepairShop\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "MobileRepairShop\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\nagam\\source\\repos\\MobileRepairShop\\MobileRepairShop\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "MobileRepairShop\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-01T13:05:59.992Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "20250201160314_useraccount.cs",
+              "DocumentMoniker": "C:\\Users\\nagam\\source\\repos\\MobileRepairShop\\MobileRepairShop\\Migrations\\20250201160314_useraccount.cs",
+              "RelativeDocumentMoniker": "MobileRepairShop\\Migrations\\20250201160314_useraccount.cs",
+              "ToolTip": "C:\\Users\\nagam\\source\\repos\\MobileRepairShop\\MobileRepairShop\\Migrations\\20250201160314_useraccount.cs",
+              "RelativeToolTip": "MobileRepairShop\\Migrations\\20250201160314_useraccount.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-01T16:03:14.921Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "History.cs",
+              "DocumentMoniker": "C:\\Users\\nagam\\source\\repos\\MobileRepairShop\\MobileRepairShop\\Models\\History.cs",
+              "RelativeDocumentMoniker": "MobileRepairShop\\Models\\History.cs",
+              "ToolTip": "C:\\Users\\nagam\\source\\repos\\MobileRepairShop\\MobileRepairShop\\Models\\History.cs",
+              "RelativeToolTip": "MobileRepairShop\\Models\\History.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-01T11:52:56.711Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\nagam\\source\\repos\\MobileRepairShop\\MobileRepairShop\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "MobileRepairShop\\Models\\Product.cs",
+              "ToolTip": "C:\\Users\\nagam\\source\\repos\\MobileRepairShop\\MobileRepairShop\\Models\\Product.cs",
+              "RelativeToolTip": "MobileRepairShop\\Models\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-01T11:52:31.804Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "History.cshtml",
+              "DocumentMoniker": "C:\\Users\\nagam\\source\\repos\\MobileRepairShop\\MobileRepairShop\\Views\\Products\\History.cshtml",
+              "RelativeDocumentMoniker": "MobileRepairShop\\Views\\Products\\History.cshtml",
+              "ToolTip": "C:\\Users\\nagam\\source\\repos\\MobileRepairShop\\MobileRepairShop\\Views\\Products\\History.cshtml",
+              "RelativeToolTip": "MobileRepairShop\\Views\\Products\\History.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-01T12:04:12.34Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\nagam\\source\\repos\\MobileRepairShop\\MobileRepairShop\\Views\\Products\\Edit.cshtml",
+              "RelativeDocumentMoniker": "MobileRepairShop\\Views\\Products\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\nagam\\source\\repos\\MobileRepairShop\\MobileRepairShop\\Views\\Products\\Edit.cshtml",
+              "RelativeToolTip": "MobileRepairShop\\Views\\Products\\Edit.cshtml",
+              "ViewState": "AgIAADEAAAAAAAAAAAAqwEYAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-01T12:12:44.933Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\nagam\\source\\repos\\MobileRepairShop\\MobileRepairShop\\Views\\Products\\Details.cshtml",
+              "RelativeDocumentMoniker": "MobileRepairShop\\Views\\Products\\Details.cshtml",
+              "ToolTip": "C:\\Users\\nagam\\source\\repos\\MobileRepairShop\\MobileRepairShop\\Views\\Products\\Details.cshtml",
+              "RelativeToolTip": "MobileRepairShop\\Views\\Products\\Details.cshtml",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAAD0AAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-01T12:13:20.258Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\nagam\\source\\repos\\MobileRepairShop\\MobileRepairShop\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "MobileRepairShop\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\nagam\\source\\repos\\MobileRepairShop\\MobileRepairShop\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "MobileRepairShop\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-01T13:11:08.564Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\nagam\\source\\repos\\MobileRepairShop\\MobileRepairShop\\Views\\Products\\Delete.cshtml",
+              "RelativeDocumentMoniker": "MobileRepairShop\\Views\\Products\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\nagam\\source\\repos\\MobileRepairShop\\MobileRepairShop\\Views\\Products\\Delete.cshtml",
+              "RelativeToolTip": "MobileRepairShop\\Views\\Products\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-01T14:22:28.279Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\nagam\\source\\repos\\MobileRepairShop\\MobileRepairShop\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "MobileRepairShop\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\nagam\\source\\repos\\MobileRepairShop\\MobileRepairShop\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "MobileRepairShop\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-01T13:11:13.093Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "About.cshtml",
+              "DocumentMoniker": "C:\\Users\\nagam\\source\\repos\\MobileRepairShop\\MobileRepairShop\\Views\\Products\\About.cshtml",
+              "RelativeDocumentMoniker": "MobileRepairShop\\Views\\Products\\About.cshtml",
+              "ToolTip": "C:\\Users\\nagam\\source\\repos\\MobileRepairShop\\MobileRepairShop\\Views\\Products\\About.cshtml",
+              "RelativeToolTip": "MobileRepairShop\\Views\\Products\\About.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-01T12:14:40.933Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\nagam\\source\\repos\\MobileRepairShop\\MobileRepairShop\\appsettings.json",
+              "RelativeDocumentMoniker": "MobileRepairShop\\appsettings.json",
+              "ToolTip": "C:\\Users\\nagam\\source\\repos\\MobileRepairShop\\MobileRepairShop\\appsettings.json",
+              "RelativeToolTip": "MobileRepairShop\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-01T11:55:00.315Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Contact.cshtml",
+              "DocumentMoniker": "C:\\Users\\nagam\\source\\repos\\MobileRepairShop\\MobileRepairShop\\Views\\Products\\Contact.cshtml",
+              "RelativeDocumentMoniker": "MobileRepairShop\\Views\\Products\\Contact.cshtml",
+              "ToolTip": "C:\\Users\\nagam\\source\\repos\\MobileRepairShop\\MobileRepairShop\\Views\\Products\\Contact.cshtml",
+              "RelativeToolTip": "MobileRepairShop\\Views\\Products\\Contact.cshtml",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAqwEYAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-01T12:15:01.992Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

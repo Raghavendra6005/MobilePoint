@@ -1,0 +1,573 @@
+﻿@* @model IEnumerable<Product> *@
+
+@* @section Styles { *@
+@*     <style> *@
+@*         :root { *@
+@*         --primary: #2563eb; *@
+@*         --primary-dark: #1e40af; *@
+@*         --secondary: #64748b; *@
+@*         --success: #22c55e; *@
+@*         --danger: #ef4444; *@
+@*         --warning: #f59e0b; *@
+@*         --background: #f8fafc; *@
+@*         --card: #ffffff; *@
+@*         --text: #1f2937; *@
+@*         } *@
+
+@*         .search-container { *@
+@*         background: var(--card); *@
+@*         padding: 1.5rem; *@
+@*         border-radius: 0.75rem; *@
+@*         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); *@
+@*         margin-bottom: 2rem; *@
+@*         display: flex; *@
+@*         gap: 1rem; *@
+@*         align-items: center; *@
+@*         } *@
+
+@*         .search-input { *@
+@*         flex: 1; *@
+@*         padding: 0.75rem 1rem; *@
+@*         border: 1px solid #e2e8f0; *@
+@*         border-radius: 0.5rem; *@
+@*         font-size: 1rem; *@
+@*         transition: border-color 0.2s; *@
+@*         } *@
+
+@*         .search-input:focus { *@
+@*         outline: none; *@
+@*         border-color: var(--primary); *@
+@*         box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1); *@
+@*         } *@
+
+@*         .btn { *@
+@*         padding: 0.75rem 1.5rem; *@
+@*         border: none; *@
+@*         border-radius: 0.5rem; *@
+@*         cursor: pointer; *@
+@*         font-weight: 500; *@
+@*         display: inline-flex; *@
+@*         align-items: center; *@
+@*         gap: 0.5rem; *@
+@*         transition: all 0.2s; *@
+@*         } *@
+
+@*         .btn:hover { *@
+@*         transform: translateY(-2px); *@
+@*         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); *@
+@*         } *@
+
+@*         .btn-primary { *@
+@*         background: var(--primary); *@
+@*         color: white; *@
+@*         } *@
+
+@*         .btn-primary:hover { *@
+@*         background: var(--primary-dark); *@
+@*         } *@
+
+@*         .btn-success { *@
+@*         background: var(--success); *@
+@*         color: white; *@
+@*         } *@
+
+@*         .btn-danger { *@
+@*         background: var(--danger); *@
+@*         color: white; *@
+@*         } *@
+
+@*         .btn-warning { *@
+@*         background: var(--warning); *@
+@*         color: white; *@
+@*         } *@
+
+@*         .product-grid { *@
+@*         display: grid; *@
+@*         grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); *@
+@*         gap: 1.5rem; *@
+@*         } *@
+
+@*         .product-card { *@
+@*         background: var(--card); *@
+@*         border-radius: 0.75rem; *@
+@*         overflow: hidden; *@
+@*         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); *@
+@*         transition: all 0.2s; *@
+@*         } *@
+
+@*         .product-card:hover { *@
+@*         transform: translateY(-4px); *@
+@*         box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); *@
+@*         } *@
+
+@*         .product-image { *@
+@*         position: relative; *@
+@*         padding-top: 75%; *@
+@*         } *@
+
+@*         .product-image img { *@
+@*         position: absolute; *@
+@*         top: 0; *@
+@*         left: 0; *@
+@*         width: 100%; *@
+@*         height: 100%; *@
+@*         object-fit: cover; *@
+@*         } *@
+
+@*         .product-details { *@
+@*         padding: 1.5rem; *@
+@*         } *@
+
+@*         .product-title { *@
+@*         font-size: 1.25rem; *@
+@*         font-weight: 600; *@
+@*         margin-bottom: 0.75rem; *@
+@*         color: var(--text); *@
+@*         } *@
+
+@*         .product-stock { *@
+@*         color: var(--secondary); *@
+@*         margin-bottom: 1rem; *@
+@*         display: flex; *@
+@*         align-items: center; *@
+@*         gap: 0.5rem; *@
+@*         } *@
+
+@*         .product-stock i { *@
+@*         color: var(--primary); *@
+@*         } *@
+
+@*         .product-actions { *@
+@*         display: flex; *@
+@*         gap: 0.75rem; *@
+@*         flex-wrap: wrap; *@
+@*         } *@
+
+@*         .toast { *@
+@*         position: fixed; *@
+@*         top: 1rem; *@
+@*         right: 1rem; *@
+@*         background: var(--card); *@
+@*         padding: 1rem; *@
+@*         border-radius: 0.5rem; *@
+@*         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); *@
+@*         display: none; *@
+@*         z-index: 1000; *@
+@*         } *@
+@*     </style> *@
+@* } *@
+
+@* <div class="search-container"> *@
+@*     <input type="text" id="search" class="search-input" placeholder="Search products..."> *@
+@*     <button class="btn btn-primary" onclick="searchProducts()"> *@
+@*         <i class="fas fa-search"></i> Search *@
+@*     </button> *@
+@*     @if (Context.Session.GetString("UserRole") == "Admin") *@
+@*     { *@
+@*         <button class="btn btn-success" onclick="window.location.href='/Products/Create'"> *@
+@*             <i class="fas fa-plus"></i> Add Item *@
+@*         </button> *@
+@*     } *@
+@* </div> *@
+
+@* <div class="product-grid"> *@
+@*     @foreach (var item in Model) *@
+@*     { *@
+@*         <div class="product-card"> *@
+@*             <div class="product-image"> *@
+@*                 <img src="@item.PhotoUrl" alt="@item.Name"> *@
+@*             </div> *@
+@*             <div class="product-details"> *@
+@*                 <h3 class="product-title">@item.Name</h3> *@
+@*                 <div class="product-stock"> *@
+@*                     <i class="fas fa-box"></i> Available: @item.AvailableItems *@
+@*                 </div> *@
+@*                 <div class="product-actions" style="place-items: center; align-items:center;"> *@
+
+@*                     <div class="d-flex justify-content-between mb-3"> *@
+@*                         <button class="btn btn-primary" onclick="window.location.href='/Products/Details/@item.Id'"> *@
+@*                             <i class="fas fa-info-circle"></i> Details *@
+@*                         </button> *@
+@*                         @if (Context.Session.GetString("UserRole") == "Admin") *@
+@*                         { *@
+@*                             <button class="btn btn-success" onclick="window.location.href='/Products/Edit/@item.Id'"> *@
+@*                                 <i class="fas fa-edit"></i> Edit *@
+@*                             </button> *@
+@*                         } *@
+@*                     </div> *@
+@*                     @if (Context.Session.GetString("UserRole") == "Admin") *@
+@*                     { *@
+@*                         <div class="d-flex justify-content-between"> *@
+@*                             <button class="btn btn-danger" onclick="sellProduct(@item.Id)"> *@
+@*                                 <i class="fas fa-shopping-cart"></i> Sell *@
+@*                             </button> *@
+@*                             <button class="btn btn-warning" onclick="deleteProduct(@item.Id)"> *@
+@*                                 <i class="fas fa-trash"></i> Delete *@
+@*                             </button> *@
+@*                         </div> *@
+@*                     } *@
+@*                 </div> *@
+
+
+@*             </div> *@
+@*         </div> *@
+@*     } *@
+@* </div> *@
+
+@* <div id="toast" class="toast"></div> *@
+
+@* @section Scripts { *@
+@*     <script> *@
+@*         function searchProducts() { *@
+@*             const searchTerm = document.getElementById('search').value.trim(); *@
+@*             if (searchTerm) { *@
+@*                 window.location.href = `/Products/Index?search=${encodeURIComponent(searchTerm)}`; *@
+@*             } *@
+@*         } *@
+
+@*         function sellProduct(id) { *@
+@*             const quantity = prompt('Enter quantity to sell:'); *@
+@*             if (quantity && !isNaN(quantity) && parseInt(quantity) > 0) { *@
+@*                 window.location.href = `/Products/Sell/${id}?quantity=${parseInt(quantity)}`; *@
+@*             } else if (quantity !== null) { *@
+@*                 showToast('Please enter a valid quantity'); *@
+@*             } *@
+@*         } *@
+
+@*         function deleteProduct(id) { *@
+@*             if (confirm('Are you sure you want to delete this product?')) { *@
+@*                 window.location.href = `/Products/Delete/${id}`; *@
+@*             } *@
+@*         } *@
+
+@*         function showToast(message) { *@
+@*             const toast = document.getElementById('toast'); *@
+@*             toast.textContent = message; *@
+@*             toast.style.display = 'block'; *@
+@*             setTimeout(() => { *@
+@*                 toast.style.display = 'none'; *@
+@*             }, 3000); *@
+@*         } *@
+
+@*         document.getElementById('search').addEventListener('keypress', function(e) { *@
+@*             if (e.key === 'Enter') { *@
+@*                 searchProducts(); *@
+@*             } *@
+@*         }); *@
+@*     </script> *@
+@* } *@
+
+
+@model IEnumerable<Product>
+
+@section Styles {
+    <style>
+        :root {
+            --primary: #667eea;
+            --primary-dark: #5a67d8;
+            --secondary: #718096;
+            --success: #48bb78;
+            --danger: #f56565;
+            --warning: #ed8936;
+            --background: #f7fafc;
+            --card: #ffffff;
+            --text: #2d3748;
+            --text-light: #718096;
+        }
+
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 2rem 1rem;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .page-header {
+            text-align: center;
+            color: white;
+            margin-bottom: 2rem;
+        }
+
+            .page-header h1 {
+                font-size: 2.5rem;
+                font-weight: 700;
+                margin-bottom: 0.5rem;
+                text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            }
+
+        .search-container {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 1.5rem;
+            border-radius: 1rem;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+            margin-bottom: 2rem;
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            backdrop-filter: blur(10px);
+        }
+
+        .search-input {
+            flex: 1;
+            padding: 1rem 1.5rem;
+            border: 2px solid #e2e8f0;
+            border-radius: 0.75rem;
+            font-size: 1rem;
+            transition: all 0.3s;
+            background: white;
+        }
+
+            .search-input:focus {
+                outline: none;
+                border-color: var(--primary);
+                box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.1);
+            }
+
+        .btn {
+            padding: 1rem 1.5rem;
+            border: none;
+            border-radius: 0.75rem;
+            cursor: pointer;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s;
+            text-decoration: none;
+            font-size: 0.95rem;
+        }
+
+            .btn:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+            .btn-primary:hover {
+                background: linear-gradient(135deg, #5a67d8 0%, #6b46c1 100%);
+            }
+
+        .btn-success {
+            background: linear-gradient(135deg, #48bb78 0%, #38a169 100%);
+            color: white;
+        }
+
+        .btn-danger {
+            background: linear-gradient(135deg, #f56565 0%, #e53e3e 100%);
+            color: white;
+        }
+
+        .btn-warning {
+            background: linear-gradient(135deg, #ed8936 0%, #dd6b20 100%);
+            color: white;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .product-card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 1rem;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+            transition: all 0.3s;
+            backdrop-filter: blur(10px);
+        }
+
+            .product-card:hover {
+                transform: translateY(-8px);
+                box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
+            }
+
+        .product-image {
+            position: relative;
+            padding-top: 75%;
+            overflow: hidden;
+        }
+
+            .product-image img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: transform 0.3s;
+            }
+
+        .product-card:hover .product-image img {
+            transform: scale(1.05);
+        }
+
+        .product-details {
+            padding: 1.5rem;
+        }
+
+        .product-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--text);
+        }
+
+        .product-stock {
+            color: var(--text-light);
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.95rem;
+        }
+
+            .product-stock i {
+                color: var(--primary);
+            }
+
+        .product-actions {
+            display: grid;
+            gap: 1rem;
+        }
+
+        .action-row {
+            display: flex;
+            gap: 1rem;
+            justify-content: stretch;
+        }
+
+            .action-row .btn {
+                flex: 1;
+            }
+
+        .toast {
+            position: fixed;
+            top: 2rem;
+            right: 2rem;
+            background: white;
+            padding: 1rem 1.5rem;
+            border-radius: 0.75rem;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+            display: none;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+            border-left: 4px solid var(--primary);
+            font-weight: 500;
+        }
+    </style>
+}
+
+<div class="container">
+    <div class="page-header">
+        <h1>Product Inventory</h1>
+        <p>Manage your products with ease</p>
+    </div>
+
+    <div class="search-container">
+        <input type="text" id="search" class="search-input" placeholder="Search products by name...">
+        <button class="btn btn-primary" onclick="searchProducts()">
+            <i class="fas fa-search"></i> Search
+        </button>
+        @if (Context.Session.GetString("UserRole") == "Admin")
+        {
+            <button class="btn btn-success" onclick="window.location.href='/Products/Create'">
+                <i class="fas fa-plus"></i> Add New
+            </button>
+        }
+    </div>
+
+    <div class="product-grid">
+        @foreach (var item in Model)
+        {
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="@item.PhotoUrl" alt="@item.Name">
+                </div>
+                <div class="product-details">
+                    <h3 class="product-title">@item.Name</h3>
+                    <div class="product-stock">
+                        <i class="fas fa-box"></i>
+                        <span>@item.AvailableItems items available</span>
+                    </div>
+                    <div class="product-actions">
+                        <div class="action-row">
+                            <button class="btn btn-primary" onclick="window.location.href='/Products/Details/@item.Id'">
+                                <i class="fas fa-info-circle"></i> Details
+                            </button>
+                            @if (Context.Session.GetString("UserRole") == "Admin")
+                            {
+                                <button class="btn btn-success" onclick="window.location.href='/Products/Edit/@item.Id'">
+                                    <i class="fas fa-edit"></i> Edit
+                                </button>
+                            }
+                        </div>
+                        @if (Context.Session.GetString("UserRole") == "Admin")
+                        {
+                            <div class="action-row">
+                                <button class="btn btn-danger" onclick="sellProduct(@item.Id)">
+                                    <i class="fas fa-shopping-cart"></i> Sell
+                                </button>
+                                <button class="btn btn-warning" onclick="deleteProduct(@item.Id)">
+                                    <i class="fas fa-trash"></i> Delete
+                                </button>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+<div id="toast" class="toast"></div>
+
+@section Scripts {
+    <script>
+        function searchProducts() {
+            const searchTerm = document.getElementById('search').value.trim();
+            if (searchTerm) {
+                window.location.href = `/Products/Index?search=${encodeURIComponent(searchTerm)}`;
+            }
+        }
+
+        function sellProduct(id) {
+            const quantity = prompt('Enter quantity to sell:');
+            if (quantity && !isNaN(quantity) && parseInt(quantity) > 0) {
+                window.location.href = `/Products/Sell/${id}?quantity=${parseInt(quantity)}`;
+            } else if (quantity !== null) {
+                showToast('Please enter a valid quantity');
+            }
+        }
+
+        function deleteProduct(id) {
+            if (confirm('Are you sure you want to delete this product?')) {
+                window.location.href = `/Products/Delete/${id}`;
+            }
+        }
+
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            toast.textContent = message;
+            toast.style.display = 'block';
+            setTimeout(() => {
+                toast.style.display = 'none';
+            }, 3000);
+        }
+
+        document.getElementById('search').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                searchProducts();
+            }
+        });
+    </script>
+}

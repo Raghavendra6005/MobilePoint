@@ -1,0 +1,68 @@
+﻿@model IEnumerable<History>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .primary-container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .history-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+            .history-table th, .history-table td {
+                padding: 12px;
+                text-align: left;
+                border-bottom: 1px solid #ddd;
+            }
+
+            .history-table th {
+                background-color: #007bff;
+                color: #fff;
+            }
+
+            .history-table tr:hover {
+                background-color: #f1f1f1;
+            }
+    </style>
+</head>
+<body>
+    <div class="primary-container">
+        <h2>Sales History</h2>
+        <table class="history-table">
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Quantity Sold</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.ProductName</td>
+                        <td>@item.QuantitySold</td>
+                        <td>@item.SaleDate.ToString("dd/MM/yyyy HH:mm")</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
